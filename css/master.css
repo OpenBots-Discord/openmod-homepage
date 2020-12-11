@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 body {
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Montserrat', sans-serif;
+  ;
   background: #2C2F33;
   font-size: 20px;
   margin: 0;
@@ -39,7 +41,7 @@ img {
 
 main {
   background: #383B3F;
-  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   text-align: center;
   min-width: 460px;
   padding: 20px;
@@ -78,7 +80,7 @@ main img {
   transition-property: all;
   border-radius: 10px;
   background-color: #2C2F33;
-  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   padding: 20px;
 }
 
@@ -91,14 +93,14 @@ main img {
 
 .main_wrapper:hover {
   transition: 0.5s;
-  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
   transform: scale(1.02);
 }
 
 .madeby {
   background-color: #383B3F;
   color: #fff;
-  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   padding: 15px;
   text-align: center;
   align-items: center;
@@ -127,16 +129,16 @@ main img {
   padding: 5px 15px;
 }
 
-.media h1{
+.media h1 {
   padding: 0;
   margin: 0;
 }
 
 @media (min-width: 600px) {
-    .media:hover{
-        box-shadow: 0 0 30px rgba(114, 137, 218, 0.5);
-        padding: 5px 30px;
-    }
+  .media:hover {
+    box-shadow: 0 0 30px rgba(114, 137, 218, 0.5);
+    padding: 5px 30px;
+  }
 }
 
 .gh {
@@ -150,10 +152,10 @@ main img {
 }
 
 @media (max-width: 980px) {
-    .main_wrapper{
-        display: block;
-        max-width: auto;
-        align-items: center;
-        width: auto;
-    }
+  .main_wrapper {
+    display: block;
+    max-width: auto;
+    align-items: center;
+    width: auto;
+  }
 }
