@@ -1,4 +1,6 @@
 /.idea
+.eslintcache
+*.log
 
 # dependencies
 /node_modules
