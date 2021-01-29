@@ -1,19 +1,21 @@
 import React, { Component } from "react";
-import { MDBContainer, MDBFooter } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
 
 class AppFooter extends Component {
   render() {
     return (
       <Router>
-        <MDBFooter className="font-small pt-4 dark-grey-text">
-          <div className="footer-copyright text-center py-3">
-            <MDBContainer fluid>
-              &copy; {new Date().getFullYear()} Copyright:{" "}
-              <a href="https://arslee.tk/"> arslee.tk </a>
-            </MDBContainer>
+        <div
+          className="footer-copyright text-center py-3 text-white"
+          style={{ backgroundColor: "rgba(0,0,0,0.15)" }}
+        >
+          <div className="container-fluid">
+            &copy; {new Date().getFullYear()} Copyright:{" "}
+            <a href="https://arslee.tk/" style={{ color: "#fff" }}>
+              <strong> arslee.tk </strong>
+            </a>
           </div>
-        </MDBFooter>
+        </div>
       </Router>
     );
   }

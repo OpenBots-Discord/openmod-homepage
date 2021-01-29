@@ -15,6 +15,7 @@ import {
   MDBCollapse,
   MDBIcon,
 } from "mdbreact";
+import { Link } from "react-scroll";
 
 class AppHeader extends Component {
   toggleCollapse: () => void;
@@ -35,19 +36,18 @@ class AppHeader extends Component {
     return (
       <Router>
         <MDBNavbar
-          dark
           expand="md"
           fixed="top"
+          dark
           scrolling
-          transparent
           className="darken-navbar"
         >
           <MDBNavbarBrand>
             <img
               src={logo}
               className={"mr-2"}
-              width={30}
-              height={30}
+              width={22}
+              height={22}
               alt={"*Logo*"}
             />
             <strong className="white-text">OpenMod</strong>
@@ -57,23 +57,42 @@ class AppHeader extends Component {
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
             <MDBNavbarNav left>
               <MDBNavItem>
-                <MDBNavLink to="#!">Features</MDBNavLink>
+                <Link to="test1" smooth={true}>
+                  <MDBNavLink to="#!">Features</MDBNavLink>
+                </Link>
               </MDBNavItem>
 
               <MDBNavItem>
-                <MDBNavLink to="#!">Invite</MDBNavLink>
+                <a
+                  className="nav-link waves-light"
+                  href="https://discord.com/oauth2/authorize?client_id=738279888674357298&permissions=8&scope=bot"
+                >
+                  Invite
+                </a>
               </MDBNavItem>
 
               <MDBNavItem>
-                <MDBNavLink to="#!">Documentation</MDBNavLink>
+                <a
+                  className="nav-link waves-light"
+                  href="https://docs.open-mod.tk/"
+                >
+                  Documentation
+                </a>
               </MDBNavItem>
 
               <MDBNavItem>
-                <MDBNavLink to="#!">Dashboard</MDBNavLink>
+                <MDBNavLink disabled to="#" className="text-white-50">
+                  Dashboard
+                </MDBNavLink>
               </MDBNavItem>
 
               <MDBNavItem>
-                <MDBNavLink to="#!">Support server</MDBNavLink>
+                <a
+                  className="nav-link waves-light"
+                  href="https://discord.gg/PAWwUB5"
+                >
+                  Support server
+                </a>
               </MDBNavItem>
             </MDBNavbarNav>
 

@@ -1,0 +1,7 @@
+.bg {
+    background-image: url('../Media/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 40.75vmin;
+    padding-top: 40.75vmin;
+}
